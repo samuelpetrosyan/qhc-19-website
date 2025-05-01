@@ -1,196 +1,199 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="qolej_favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ՃՇՀԱՀ ՔՈԼԵՋ</title>
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
+  <!-- Tailwind CSS (via CDN for quick prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-		<link href="css/tiny-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<title>ՃՇՀԱՀ ՄՄԿ ՔՈԼԵՋ</title>
-	</head>
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" />
 
-	<body>
+  <!-- Meta tags for SEO -->
+  <meta name="description" content="Official website of College Name - excellence in education." />
+  <meta name="keywords" content="College, Education, University, Programs, Admission" />
+  <meta name="author" content="Your Name or College Name" />
 
-		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-			<div class="container">
-				<!-- <a class="navbar-brand" href="index.html">Furni<span>.</span></a> -->
-        <a class="navbar-brand" href="#">
-          <img src="images/logo_arm.svg" alt="Test Logo" style="height: 40px;">
-        </a>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+  <header>
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <!-- Logo as SVG Icon -->
+      <a href="#" class="flex items-center space-x-1">
+<img src="logo_arm.svg" alt="College Logo" style="height: 80px;">
+<span class="text-3xl font-bold hidden sm:inline armenian-title"> <!-- Optional label -->
+ՃՇՀԱՀ ՄՄԿ Քոլեջ
+</span>
+      </a>
 
-				<div class="collapse navbar-collapse" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Գլխավոր</a>
-						</li>
-						<li><a class="nav-link" href="about.html">Մեր մասին</a></li>
-						<li><a class="nav-link" href="services.html">Մասնագիտություններ</a></li>
-						<li><a class="nav-link" href="contact.html">Կապ</a></li>
-					</ul>
-				</div>
-			</div>
+          <!-- Hamburger Button (Mobile) -->
+          <button id="menuToggle" class="sm:hidden text-white-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
 
-		</nav>
-		<!-- End Header/Navigation -->
-
-		<!-- Start Hero Section -->
-			<div class="hero">
-				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-lg-9">
-							<div class="intro-excerpt">
-								<h1><span clsas="d-block">ԲԱՐԻ ԳԱԼՈՒՍՏ</span></h1>
-								<h3 class="mb-4">ՃԱՐՏԱՐԱՊԵՏՈՒԹՅԱՆ ԵՎ ՇԻՆԱՐԱՐՈՒԹՅԱՆ ՀԱՅԱՍՏԱՆԻ ԱԶԳԱՅԻՆ ՀԱՄԱԼՍԱՐԱՆԻ ՄԻՋԻՆ ՄԱՍՆԱԳԻՏՈՒԹՅԱՆ ԿՐԹՈՒԹՅԱՆ ՔՈԼԵՋ</h3>
-								<p><a href="" class="btn btn-secondary me-2">Դիմել</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- End Hero Section -->
-
-		<!-- Start Product Section -->
-		<div class="product-section">
-			<div class="container">
-				<div class="row">
-
-
-
-
-					<!-- Start Column 4 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Շենքերի և կառույցների շինարարություն և շահագործում</h3>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 4 -->
-
-
-          <!-- Start Column 4 -->
-          <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-            <a class="product-item" href="cart.html">
-              <img src="images/product-3.png" class="img-fluid product-thumbnail">
-              <h3 class="product-title">Հաշվողական տեխնիկայի և ավտոմատացված համակարգերի ծրագրային ապահովում</h3>
-
-              <span class="icon-cross">
-                <img src="images/cross.svg" class="img-fluid">
-              </span>
-            </a>
-          </div>
-          <!-- End Column 4 -->
-          <!-- Start Column 4 -->
-          <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-            <a class="product-item" href="cart.html">
-              <img src="images/product-3.png" class="img-fluid product-thumbnail">
-              <h3 class="product-title">Գազամատակարարման սարքավորումների և համակարգերի հավաքակցում և շահագործում</h3>
-              <span class="icon-cross">
-                <img src="images/cross.svg" class="img-fluid">
-              </span>
-            </a>
-          </div>
-          <!-- End Column 4 -->
-          <!-- Start Column 4 -->
-          <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-            <a class="product-item" href="cart.html">
-              <img src="images/product-3.png" class="img-fluid product-thumbnail">
-              <h3 class="product-title">Վերամբարձ տրանսպորտային, շինարարական, ճանապարհային մեքենաների և սարքավորումների շահագործում</h3>
-
-              <span class="icon-cross">
-                <img src="images/cross.svg" class="img-fluid">
-              </span>
-            </a>
-          </div>
-          <!-- End Column 4 -->
-          <!-- Start Column 4 -->
-          <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-            <a class="product-item" href="cart.html">
-              <img src="images/product-3.png" class="img-fluid product-thumbnail">
-              <h3 class="product-title">Հաշվապահական հաշվառում</h3>
-
-              <span class="icon-cross">
-                <img src="images/cross.svg" class="img-fluid">
-              </span>
-            </a>
-          </div>
-          <!-- End Column 4 -->
-          <!-- Start Column 3 -->
-          <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-            <a class="product-item" href="cart.html">
-              <img src="images/product-2.png" class="img-fluid product-thumbnail">
-              <h3 class="product-title">Քաղաքաշինական կադաստր</h3>
-
-              <span class="icon-cross">
-                <img src="images/cross.svg" class="img-fluid">
-              </span>
-            </a>
-          </div>
-          <!-- End Column 3 -->
+          <!-- Navigation Links -->
+          <nav id="navMenu" class="hidden sm:flex sm:items-center space-x-6">
+            <a href="index.html" class="text-white-700 font-bold hover:text-yellow-600">Գլխավոր</a>
+            <a href="about.html" class="text-white-700 hover:text-yellow-600">Մեր մասին</a>
+            <a href="masnagitutyunner.html" class="text-white-700 hover:text-yellow-600">Մասնագիտություններ</a>
+            <a href="dimel.html" class="text-white-700 hover:text-yellow-600">Դիմել</a>
+            </nav>
         </div>
-				</div>
-			</div>
-		<!-- End Product Section -->
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="sm:hidden hidden px-4 pb-4">
+          <a href="index.html" class="block py-2 text-white-700 font-bold hover:text-yellow-600">Գլխավոր</a>
+          <a href="about.html" class="block py-2 text-white-700 hover:text-yellow-600">Մեր մասին</a>
+          <a href="masnagitutyunner.html" class="block py-2 text-white-700 hover:text-yellow-600">Մասնագիտություններ</a>
+          <a href="dimel.html" class="block py-2 text-white-700 hover:text-yellow-600">Դիմել</a>
+          </div>
+
+        <!-- JS to toggle mobile menu -->
+        <script>
+          const menuToggle = document.getElementById('menuToggle');
+          const mobileMenu = document.getElementById('mobileMenu');
+          menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        </script>
+
+  </header>
 
 
-		<!-- Start Footer Section -->
-		<footer class="footer-section">
-			<div class="container relative">
+  <section class="hero py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+        ԲԱՐԻ ԳԱԼՈՒՍՏ
+      </h1>
+      <h2 class="text-lg sm:text-xl md:text-2xl text-gray-700 font-semibold mb-6 leading-snug max-w-4xl mx-auto">
+        ՃԱՐՏԱՐԱՊԵՏՈՒԹՅԱՆ ԵՎ ՇԻՆԱՐԱՐՈՒԹՅԱՆ ՀԱՅԱՍՏԱՆԻ ԱԶԳԱՅԻՆ ՀԱՄԱԼՍԱՐԱՆԻ ՄԻՋԻՆ ՄԱՍՆԱԳԻՏՈՒԹՅԱՆ ԿՐԹՈՒԹՅԱՆ ՔՈԼԵՋ
+      </h2>
+    </div>
+  </section>
 
+  <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">ԹԱՐՄ ԼՈՒՐԵՐ</h2>
 
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
-				<div class="row g-5 mb-1">
-						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-              <li><a href="#"><span class="fa fa-brands fa-youtube"></span></a></li>
-						</ul>
-					</div>
+        <!-- News Card -->
 
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition max-w-sm mx-auto">
+          <div class="flex justify-center mb-4">
+            <img src="placeholder.png" class="h-20 w-auto object-contain" alt="Նկար">
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-2">Համագործակցության նոր ծրագիր</h3>
+          <p class="text-gray-600 text-center">ՃՇՀԱՀ Քոլեջը կնքել է նոր համաձայնագրեր մի քանի եվրոպական համալսարանների հետ՝ ուսանողներին հնարավորություն տալու մասնակցել միջազգային կրթական փոխանակման ծրագրերին։</p>
+          <p class="text-gray-400 text-center text-sm mt-2">Մարտի 14, 2025</p>
+        </div>
 
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script><br>Բոլոր իրավունքները պաշտպանված են
-            </p>
-						</div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition max-w-sm mx-auto">
+          <div class="flex justify-center mb-4">
+            <img src="placeholder.png" class="h-20 w-auto object-contain" alt="Նկար">
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-2">Նորագույն ուսումնական սարքավորումներ</h3>
+          <p class="text-gray-600 text-center">ՃՇՀԱՀ Քոլեջը արդիականացրել է բոլոր դասասենյակները՝ ապահովելով նորագույն տեխնոլոգիաներով ու սարքավորումներով ուսումնական գործընթացը:</p>
+          <p class="text-gray-400 text-center text-sm mt-2">Հունվարի 18, 2025</p>
+        </div>
 
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Կանոնադրություն</a></li>
-								<li><a href="#">Գաղտնիության քաղաքականություն</a></li>
-							</ul>
-						</div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition max-w-sm mx-auto">
+          <div class="flex justify-center mb-4">
+            <img src="placeholder.png" class="h-20 w-auto object-contain" alt="Նկար">
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-2">Նոր ակադեմիական ծրագրեր</h3>
+          <p class="text-gray-600 text-center">Այս սեմեստրից սկսած, ՃՇՀԱՀ Քոլեջը ներկայացնում է երկու նոր ակադեմիական ծրագիր՝ Կիբերանվտանգություն և Դիջիթալ մարքեթինգ:</p>
+          <p class="text-gray-400 text-center text-sm mt-2">Հունվարի 30, 2025</p>
+        </div>
 
-					</div>
-				</div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition max-w-sm mx-auto">
+          <div class="flex justify-center mb-4">
+            <img src="placeholder.png" class="h-20 w-auto object-contain" alt="Նկար">
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-2">Ստուգման արդյունքների բարձրացումը</h3>
+          <p class="text-gray-600 text-center">ՃՇՀԱՀ Քոլեջը իրականացնում է անհրաժեշտ քայլեր՝ ուսանողների ակադեմիական և մասնագիտական առաջադիմության բարձրացման համար:</p>
+          <p class="text-gray-400 text-center text-sm mt-2">Դեկտեմբերի 12, 2024</p>
+        </div>
 
-			</div>
-		</footer>
-		<!-- End Footer Section -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition max-w-sm mx-auto">
+          <div class="flex justify-center mb-4">
+            <img src="placeholder.png" class="h-20 w-auto object-contain" alt="Նկար">
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-2">Ամենամյա ավարտական արարողություն</h3>
+          <p class="text-gray-600 text-center">ՃՇՀԱՀ ՔՈԼԵՋ-ում կայացավ ավարտական արարողությունը, որտեղ շնորհվեցին ուսանողներին, ովքեր աչքի էին ընկել ուսումնական և հասարակական գործունեությամբ:</p>
+          <p class="text-gray-400 text-center text-sm mt-2">Նոյեմբերի 29, 2024</p>
+        </div>
 
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition max-w-sm mx-auto">
+          <div class="flex justify-center mb-4">
+            <img src="placeholder.png" class="h-20 w-auto object-contain" alt="Նկար">
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-2">Հոգեբանական աջակցություն</h3>
+          <p class="text-gray-600 text-center">ՃՇՀԱՀ Քոլեջը սկսել է նոր հոգեբանական աջակցության ծրագրեր՝ ներառյալ խորհրդատվություն, սեմինարներ և միջոցառումներ սթրեսից թեթևանալու համար:</p>
+          <p class="text-gray-400 text-center text-sm mt-2">Սեպտեմբերի 19, 2024</p>
+        </div>
 
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition max-w-sm mx-auto">
+          <div class="flex justify-center mb-4">
+            <img src="placeholder.png" class="h-20 w-auto object-contain" alt="Նկար">
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-2">Սեմինար ՏՏ ոլորտում</h3>
+          <p class="text-gray-600 text-center">Փորձագետ Սամվել Մարտիրոսյանը ներկայացրեց տեղեկատվական տեխնոլոգիաների նորարարությունները և գործնական կիրառումները ուսանողների հետ հանդիպման ժամանակ:</p>
+          <p class="text-gray-400 text-center text-sm mt-2">Հունիսի 4, 2024</p>
+        </div>
 
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="container space-y-4">
+<h1 class="flex text-2xl font-bold">Կոնտակտային տվյալներ</h1>
+    <p class="flex items-start">
+      <i class="fa-solid fa-phone text-green-600 w-5 mr-3 mt-1"></i>
+      <span>(010) 64-20-99, (010) 64-20-01</span>
+    </p>
+
+    <p class="flex items-start">
+      <i class="fa-solid fa-location-dot text-blue-600 w-5 mr-3 mt-1"></i>
+      <span>ք. Երևան, Նոր Նորքի 5-րդ զանգված, Մառի 17/1</span>
+    </p>
+    <p class="flex items-start">
+      <i class="fa-solid fa-envelope text-gray-500 w-5 mr-3 mt-1"></i>
+      <span>ahovhanisyan@ysuac.am</span>
+    </p>
+  </div>
+
+  <div class="container flex mt-6 space-x-6 text-2xl">
+    <a href="#" class="text-blue-600 hover:text-blue-800" aria-label="Facebook">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="#" class="text-pink-500 hover:text-pink-700" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#" class="text-red-600 hover:text-red-800" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+  </div>
+    <div class="container">
+      <p>&copy; 2025 ՃՇՀԱՀ ՄՄԿ ՔՈԼԵՋ</p>
+
+  </footer>
+
+</body>
 </html>

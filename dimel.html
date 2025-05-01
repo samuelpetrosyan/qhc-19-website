@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ՃՇՀԱՀ ՔՈԼԵՋ</title>
+
+  <!-- Tailwind CSS (via CDN for quick prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Meta tags for SEO -->
+  <meta name="description" content="Official website of College Name - excellence in education." />
+  <meta name="keywords" content="College, Education, University, Programs, Admission" />
+  <meta name="author" content="Your Name or College Name" />
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <!-- Logo as SVG Icon -->
+      <a href="#" class="flex items-center space-x-1">
+<img src="logo_arm.svg" alt="College Logo" style="height: 80px;">
+<span class="text-3xl font-bold hidden sm:inline armenian-title"> <!-- Optional label -->
+ՃՇՀԱՀ ՄՄԿ Քոլեջ
+</span>
+      </a>
+
+          <!-- Hamburger Button (Mobile) -->
+          <button id="menuToggle" class="sm:hidden text-white-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+
+          <!-- Navigation Links -->
+          <nav id="navMenu" class="hidden sm:flex sm:items-center space-x-6">
+            <a href="index.html" class="text-white-700 hover:text-yellow-600">Գլխավոր</a>
+            <a href="about.html" class="text-white-700 hover:text-yellow-600">Մեր մասին</a>
+            <a href="masnagitutyunner.html" class="text-white-700 hover:text-yellow-600">Մասնագիտություններ</a>
+            <a href="dimel.html" class="text-white-700 font-bold hover:text-yellow-600">Դիմել</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="sm:hidden hidden px-4 pb-4">
+          <a href="index.html" class="block py-2 text-white-700 hover:text-yellow-600">Գլխավոր</a>
+          <a href="about.html" class="block py-2 text-white-700 hover:text-yellow-600">Մեր մասին</a>
+          <a href="masnagitutyunner.html" class="block py-2 text-white-700 hover:text-yellow-600">Մասնագիտություններ</a>
+          <a href="dimel.html" class="block py-2 text-white-700 font-bold hover:text-yellow-600">Դիմել</a>
+          </div>
+
+        <!-- JS to toggle mobile menu -->
+        <script>
+          const menuToggle = document.getElementById('menuToggle');
+          const mobileMenu = document.getElementById('mobileMenu');
+          menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        </script>
+
+  </header>
+
+
+  <section class="hero py-10">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+ԴԻՄՈՐԴԻ ՀԱՅՏ
+      </h1>
+    </div>
+  </section>
+  <section class="container mx-auto space-y-4" aria-label="Information Cards">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md">
+      <form action="/submit-form" method="POST" enctype="multipart/form-data" class="space-y-6">
+
+        <!-- Personal Information -->
+        <div>
+          <label class="block text-sm font-medium">Անուն</label>
+          <input name="first_name" required class="mt-1 block w-full border rounded-md p-2" type="text">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Ազգանուն</label>
+          <input name="last_name" required class="mt-1 block w-full border rounded-md p-2" type="text">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Հայրանուն</label>
+          <input name="father_name" required class="mt-1 block w-full border rounded-md p-2" type="text">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Ծննդյան ամսաթիվ</label>
+          <input name="dob" required class="mt-1 block w-full border rounded-md p-2" type="date">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Էլ. փոստ</label>
+          <input name="email" required class="mt-1 block w-full border rounded-md p-2" type="email">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Հեռախոսահամար</label>
+          <input name="phone" required class="mt-1 block w-full border rounded-md p-2" type="tel">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">ՀԾՀ / Անձնագիր</label>
+          <input name="ssn_or_decline" required class="mt-1 block w-full border rounded-md p-2" type="text">
+        </div>
+
+        <!-- File Uploads -->
+        <div>
+          <label class="block text-sm font-medium">Լուսանկար</label>
+          <input name="photo" required class="mt-1 block w-full" type="file" accept="image/*">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Կրթության փաստաթուղթ</label>
+          <input name="diploma" required class="mt-1 block w-full" type="file">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Անձը հաստատող փաստաթուղթ</label>
+          <input name="id_doc" required class="mt-1 block w-full" type="file">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Կցագրման վկայական (զորակոչային տարիք)</label>
+          <input name="military_doc" class="mt-1 block w-full" type="file">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Արտոնության փաստաթուղթ (առկայության դեպքում)</label>
+          <input name="privilege_doc" class="mt-1 block w-full" type="file">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Վարպետության վկայական / բարձր կրթություն (առկայության դեպքում)</label>
+          <input name="higher_ed_doc" class="mt-1 block w-full" type="file">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Մրցույթի դիպլոմներ (առկայության դեպքում)</label>
+          <input name="competition_cert" class="mt-1 block w-full" type="file">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Ընդունելության քննական փաստաթուղթ (առկայության դեպքում)</label>
+          <input name="exam_result" class="mt-1 block w-full" type="file">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Աշխատանքի վայրից տեղեկանք (առկայության դեպքում)</label>
+          <input name="job_cert" class="mt-1 block w-full" type="file">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Վճարման անդորրագիր</label>
+          <input name="payment_receipt" required class="mt-1 block w-full" type="file">
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="bg-[#960000] text-white px-6 py-2 rounded-md hover:bg-[#361313]">Ուղարկել հայտը</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.card-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const body = header.nextElementSibling;
+        const icon = header.querySelector('svg');
+
+        const isOpen = !body.classList.contains('hidden');
+
+        if (isOpen) {
+          body.classList.add('hidden');
+          icon.classList.remove('rotate-180');
+        } else {
+          body.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+  </script>
+
+  <footer>
+  <div class="container space-y-4">
+<h1 class="flex text-2xl font-bold">Կոնտակտային տվյալներ</h1>
+    <p class="flex items-start">
+      <i class="fa-solid fa-phone text-green-600 w-5 mr-3 mt-1"></i>
+      <span>(010) 64-20-99, (010) 64-20-01</span>
+    </p>
+
+    <p class="flex items-start">
+      <i class="fa-solid fa-location-dot text-blue-600 w-5 mr-3 mt-1"></i>
+      <span>ք. Երևան, Նոր Նորքի 5-րդ զանգված, Մառի 17/1</span>
+    </p>
+    <p class="flex items-start">
+      <i class="fa-solid fa-envelope text-gray-500 w-5 mr-3 mt-1"></i>
+      <span>ahovhanisyan@ysuac.am</span>
+    </p>
+  </div>
+
+  <div class="container flex mt-6 space-x-6 text-2xl">
+    <a href="#" class="text-blue-600 hover:text-blue-800" aria-label="Facebook">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="#" class="text-pink-500 hover:text-pink-700" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#" class="text-red-600 hover:text-red-800" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+  </div>
+    <div class="container">
+      <p>&copy; 2025 ՃՇՀԱՀ ՄՄԿ ՔՈԼԵՋ</p>
+
+  </footer>
+
+</body>
+</html>
